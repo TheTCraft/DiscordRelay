@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chat - Chat Relay</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="chat-container">
+    <header>
+      <h2>Chat Relay</h2>
+      <div>Logged in as: <strong>{{ username }}</strong> | <a href="/logout">Logout</a></div>
+    </header>
+    <div id="messages" class="messages"></div>
+    <form id="chat-form">
+      <input id="message-input" type="text" placeholder="Type your message..." autocomplete="off" required />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+  <script>
+    const USERNAME = "{{ username }}";
+  </script>
+  <script src="{{ url_for('static', filename='chat.js') }}"></script>
+</body>
+</html>

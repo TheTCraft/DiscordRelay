@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome to Forum Chat</title>
+  <style>
+    body {
+      background: #1e1e2f;
+      color: #f0f0f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      max-width: 400px;
+      text-align: center;
+      line-height: 1.4;
+    }
+    button {
+      background-color: #3b82f6;
+      border: none;
+      padding: 15px 40px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 8px rgba(59, 130, 246, 0.4);
+    }
+    button:hover {
+      background-color: #2563eb;
+      box-shadow: 0 6px 12px rgba(37, 99, 235, 0.6);
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Forum Chat</h1>
+  <p>
+    Access your Discord channel messages from anywhere.<br />
+    Login to chat or view messages without Discord app.
+  </p>
+  <button onclick="location.href='login.html'">Go to Login</button>
+</body>
+</html>
